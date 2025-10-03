@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUK-Film - Favorites</title>
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo" onclick="window.location.href='index.html'">
+                <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                    <polyline points="7 2 12 7 17 2"></polyline>
+                </svg>
+                <span class="logo-text">TUK-Film</span>
+            </div>
+
+            <nav class="nav">
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="movies.html" class="nav-link">Movies</a>
+                <a href="favorites.html" class="nav-link active">Favorites</a>
+                
+                <div class="search-container">
+                    <input type="text" placeholder="Enter some keywords" class="search-input">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="favorites-container">
+        <div class="favorites-header">
+            <svg class="heart-icon" width="32" height="32" viewBox="0 0 24 24" fill="#ef4444" stroke="#ef4444" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <h1 class="page-title">My Favorites</h1>
+            <svg class="heart-icon" width="32" height="32" viewBox="0 0 24 24" fill="#ef4444" stroke="#ef4444" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+        </div>
+        
+        <div class="movie-grid favorites-grid">
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://plus.unsplash.com/premium_photo-1682125712438-7f60bdc9c5f1?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="The Godfather">
+                    <div class="movie-overlay-hover">
+                        <button class="watch-btn">Watch Now</button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>The Godfather</h3>
+                    <div class="rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span> 
+                        <span class="star filled">★</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://images.unsplash.com/photo-1662727248669-c5308ee2299e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Titanic">
+                    <div class="movie-overlay-hover">
+                        <button class="watch-btn">Watch Now</button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>Titanic</h3>
+                    <div class="rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://images.unsplash.com/photo-1628432136678-43ff9be34064?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="The Dark Knight">
+                    <div class="movie-overlay-hover">
+                        <button class="watch-btn">Watch Now</button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>The Dark Knight</h3>
+                    <div class="rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://images.unsplash.com/photo-1605333610757-a403ace8fc15?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Inception">
+                    <div class="movie-overlay-hover">
+                        <button class="watch-btn">Watch Now</button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>Inception</h3>
+                    <div class="rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://images.unsplash.com/photo-1703737547632-bac624d89ff5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="The Matrix">
+                    <div class="movie-overlay-hover">
+                        <button class="watch-btn">Watch Now</button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>The Matrix</h3>
+                    <div class="rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="https://images.unsplash.com/photo-1753944847480-92f369a5f00e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Interstellar">
+                    <div class="movie-overlay-hover">
+                        <button class="watch-btn">Watch Now</button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h3>Interstellar</h3>
+                    <div class="rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <p class="footer-text">© 2025 TUK-Film. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Terms of Service</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

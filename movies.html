@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUK-Film - Movies</title>
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo" onclick="window.location.href='index.html'">
+                <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                    <polyline points="7 2 12 7 17 2"></polyline>
+                </svg>
+                <span class="logo-text">TUK-Film</span>
+            </div>
+
+            <nav class="nav">
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="movies.html" class="nav-link active">Movies</a>
+                <a href="favorites.html" class="nav-link">Favorites</a>
+                
+                <div class="search-container">
+                    <input type="text" placeholder="Enter some keywords" class="search-input">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="genre-list">
+                <div class="genre-item">
+                    <input type="checkbox" id="action" class="genre-checkbox">
+                    <label for="action">Action</label>
+                </div>
+                <div class="genre-item">
+                    <input type="checkbox" id="adventure" class="genre-checkbox">
+                    <label for="adventure">Adventure</label>
+                </div>
+                <div class="genre-item">
+                    <input type="checkbox" id="romance" class="genre-checkbox">
+                    <label for="romance">Romance</label>
+                </div>
+                <div class="genre-item">
+                    <input type="checkbox" id="documentary" class="genre-checkbox">
+                    <label for="documentary">Documentary</label>
+                </div>
+                <div class="genre-item">
+                    <input type="checkbox" id="war" class="genre-checkbox">
+                    <label for="war">War</label>
+                </div>
+                <div class="genre-item">
+                    <input type="checkbox" id="sport" class="genre-checkbox">
+                    <label for="sport">Sport</label>
+                </div>
+                <div class="genre-item">
+                    <input type="checkbox" id="musical" class="genre-checkbox">
+                    <label for="musical">Musical</label>
+                </div>
+                <div class="genre-item">
+                    <input type="checkbox" id="family" class="genre-checkbox">
+                    <label for="family">Family</label>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <h1 class="page-title" style="margin-bottom: 2rem;">All Movies</h1>
+            
+            <div class="movie-grid">
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://images.unsplash.com/photo-1753944847480-92f369a5f00e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="The Post">
+                        <div class="movie-overlay-hover">
+                            <button class="watch-btn">Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>The Post</h3>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://plus.unsplash.com/premium_photo-1682125712438-7f60bdc9c5f1?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="The Godfather">
+                        <div class="movie-overlay-hover">
+                            <button class="watch-btn">Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>The Godfather</h3>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://images.unsplash.com/photo-1662727248669-c5308ee2299e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Titanic">
+                        <div class="movie-overlay-hover">
+                            <button class="watch-btn">Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Titanic</h3>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://images.unsplash.com/photo-1755076347925-fe1e04401c90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="The Lion King">
+                        <div class="movie-overlay-hover">
+                            <button class="watch-btn">Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>The Lion King</h3>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://images.unsplash.com/photo-1703737547632-bac624d89ff5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Avatar">
+                        <div class="movie-overlay-hover">
+                            <button class="watch-btn">Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Avatar</h3>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://images.unsplash.com/photo-1605333610757-a403ace8fc15?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Inception">
+                        <div class="movie-overlay-hover">
+                            <button class="watch-btn">Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Inception</h3>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://images.unsplash.com/photo-1628432136678-43ff9be34064?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="The Dark Knight">
+                        <div class="movie-overlay-hover">
+                            <button class="watch-btn">Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>The Dark Knight</h3>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://images.unsplash.com/photo-1662727248669-c5308ee2299e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Pulp Fiction">
+                        <div class="movie-overlay-hover">
+                            <button class="watch-btn">Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Pulp Fiction</h3>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://images.unsplash.com/photo-1755076347925-fe1e04401c90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Forrest Gump">
+                        <div class="movie-overlay-hover">
+                            <button class="watch-btn">Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Forrest Gump</h3>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://images.unsplash.com/photo-1703737547632-bac624d89ff5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="The Matrix">
+                        <div class="movie-overlay-hover">
+                            <button class="watch-btn">Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>The Matrix</h3>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://images.unsplash.com/photo-1753944847480-92f369a5f00e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Interstellar">
+                        <div class="movie-overlay-hover">
+                            <button class="watch-btn">Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Interstellar</h3>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="https://images.unsplash.com/photo-1628432136678-43ff9be34064?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Gladiator">
+                        <div class="movie-overlay-hover">
+                            <button class="watch-btn">Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Gladiator</h3>
+                        <div class="rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <p class="footer-text">© 2025 TUK-Film. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Terms of Service</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
